@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "DuckDuckGo Google Button",
+  "version": "1.0.0",
+
+  "description": "Add a Google Search Button to your DuckDuckGo Search",
+
+  "icons": {
+      "48": "icons/dg-48.png",
+      "32": "icons/dg-32.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.duckduckgo.com/?q=*"],
+      "js": ["main.js"]
+    }
+  ]
+}
